@@ -192,6 +192,20 @@ ul {
   margin-bottom: 40px;
 }
 
+.admin-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 500px;
+  background: url("../images/grey.jpg") no-repeat center center/cover;
+  margin-bottom: 40px;
+}
+
 .about-us .content {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -220,9 +234,10 @@ ul {
   width: 100%;
 }
 
-.support-form {
+.support-form,
+.login-form {
   position: relative;
-  top: 60px;
+  top: 20px;
   height: 350px;
   width: 400px;
 }
@@ -236,6 +251,20 @@ input:focus {
   border: none;
   outline-offset: 0px;
   outline: none;
+}
+
+.form-control a p {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.login-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 40px;
 }
 
 /* Follow */
@@ -356,5 +385,105 @@ input:focus {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+}
+
+#forgot-pass {
+  color: grey;
+  font-size: 10pt;
+  margin-top: 3px;
+  text-align: right;
+}
+
+#card {
+  background: #fbfbfb;
+  font-size: 10px;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+          box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+  height: 400px;
+  width: 329px;
+  margin-left: 60%;
+  margin-top: 5%;
+}
+
+@media (max-width: 768px) {
+  .admin-login {
+    background: none;
+  }
+  #card {
+    background: #fbfbfb;
+    font-size: 10px;
+    border-radius: 8px;
+    -webkit-box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+            box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 400px;
+    width: 100%;
+  }
+}
+
+#card-content {
+  padding: 12px 44px;
+}
+
+#card-title {
+  letter-spacing: 4px;
+  padding-bottom: 23px;
+  padding-top: 13px;
+  text-align: center;
+}
+
+#signup {
+  margin-top: 16px;
+  text-align: center;
+}
+
+#submit-btn {
+  background: grey;
+  border: none;
+  border-radius: 21px;
+  cursor: pointer;
+  color: white;
+  font-family: "Raleway SemiBold", sans-serif;
+  height: 42.3px;
+  margin: 0 auto;
+  margin-top: 50px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  width: 153px;
+}
+
+#submit-btn:hover {
+  -webkit-box-shadow: 0px 1px 18px #24c64f;
+          box-shadow: 0px 1px 18px #24c64f;
+}
+
+.form {
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-border {
+  background: grey;
+  height: 1px;
+  width: 100%;
+}
+
+.form-content {
+  background: #fbfbfb;
+  border: none;
+  outline: none;
+  padding-top: 14px;
+}
+
+.admin-container {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
